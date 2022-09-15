@@ -2,6 +2,7 @@
 :root {
   --bg_color: #000000;
   --cor_principal_letras: white;
+  --p1: #ffbb00;
 }
 html {
   color: white;
@@ -20,4 +21,10 @@ h4,
 h5,
 h6 {
   margin: 0px;
+}
+
+.font-1 {
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 72px;
 }
