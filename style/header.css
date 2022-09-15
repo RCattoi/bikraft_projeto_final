@@ -1,0 +1,33 @@
+@import "./style.css";
+
+.menu {
+  background-color: var(--bg_color);
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 32px auto 0 auto;
+}
+.menu__list {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.menu__link {
+  color: var(--cor_principal_letras);
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 32px;
+}
+
+.intro {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 32px auto 0 auto;
+}
+
+.intro__texto {
+  align-self: center;
+}

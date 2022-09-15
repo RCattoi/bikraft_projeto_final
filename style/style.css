@@ -1,0 +1,23 @@
+@import "./header.css";
+:root {
+  --bg_color: #000000;
+  --cor_principal_letras: white;
+}
+html {
+  color: white;
+  background: var(--bg_color);
+}
+a {
+  text-decoration: none;
+  color: var(--bg_color);
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+}
