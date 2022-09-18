@@ -3,14 +3,20 @@
   --bg_color: #000000;
   --cor_principal_letras: white;
   --p1: #ffbb00;
+  --p5: #332200;
+  --cor_secundaria_letras: black;
 }
 html {
-  color: white;
+  /* color: white; */
   background: var(--bg_color);
 }
 a {
   text-decoration: none;
   color: var(--bg_color);
+}
+
+ul {
+  list-style: none;
 }
 
 body,
@@ -27,19 +33,38 @@ h6 {
   color: var(--p1);
 }
 
+.p5 {
+  color: var(--p5);
+}
+
 .font-1-xxl {
+  font-family: "Poppins";
   font-size: 4rem;
   font-weight: 600;
   line-height: 72px;
 }
 
-.font-1-m {
-  font-family: roboto;
-  font-size: 1.5rem;
+.font-2-l {
+  font-family: "Roboto";
   font-weight: 400;
-  line-height: 36px;
+  line-height: 2.25rem;
+  font-size: 1.5rem;
+}
+
+.font-1-m-b {
+  font: "Poppins";
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
 }
 
 .c5 {
   color: #b2b2b2;
+}
+
+.menu__list--fonte {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 2rem;
 }

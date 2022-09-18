@@ -8,13 +8,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style/style.css">
   <link rel="icon" type="image/x-icon" href="/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   <title>Bikraft</title>
 </head>
 
 <body>
   <header class="menu">
-    <img class="menu__img" src="./img/bikcraft.svg" alt="" width="136" height="32">
-    <ul class="menu__list">
+    <img class="menu__img" src="./img/bikcraft.SVG" alt="" width="136" height="32">
+    <ul class="menu__list menu__list--fonte">
       <li> <a class="menu__link" href="#bicicletas">Bicicletas</a></li>
       <li> <a class="menu__link" href="#Seguros">Seguros</a></li>
       <li> <a class="menu__link" href="#Contato">Contato</a></li>
@@ -23,11 +26,25 @@
   <main class="intro">
     <div class="intro__texto">
       <h1 class="intro__h1 font-1-xxl">Bicicletas feitas sob medida<span class="p1">.</span></h1>
-      <p class="intro__paragrafo font-1-m c5">Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft.</p>
-      <a href="/">Selecione a sua</a>
+      <p class="intro__paragrafo font-2-l c5">Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft.</p>
+      <a class="intro__link font-1-m-b p5" href="/">Selecione a sua</a>
     </div>
-    <!-- <img src="/img/bicicletas/nimbus-home.jpg" alt="" width="140" height="800"> -->
+    <img class="intro__img" src="/img/bicicletas/nimbus-home.jpg" alt="" width="640" height="760">
   </main>
+  <section class="produtos">
+    <div class="produtos_conteiner">
+      <h2 class="produtos__titulo font-1-xxl">escolha a sua<span class="p1">.</span></h2>
+      <div class="produtos__item"> <img class="teste" src="./img/bicicletas/magic-home.JPG" alt="" width="460" height="520">
+        <p>Magic Might</p> <span>R$2499</span>
+      </div>
+      <div class="produtos__item"> <img src="./img/bicicletas/magic-home.JPG" alt="" width="460" height="520">
+        <p>Magic Might</p> <span>R$2499</span>
+      </div>
+      <div class="produtos__item"> <img src="./img/bicicletas/magic-home.JPG" alt="" width="460" height="520">
+        <p>Magic Might</p> <span>R$2499</span>
+      </div>
+    </div>
+  </section>
 </body>
 
 </html>
