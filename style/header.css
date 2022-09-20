@@ -1,7 +1,7 @@
 @import "./style.css";
 
 .menu {
-  background-color: var(--bg_color);
+  background-color: var(--c12);
   max-width: 1200px;
   display: flex;
   justify-content: space-between;
@@ -15,7 +15,7 @@
 }
 
 .menu__link {
-  color: var(--cor_principal_letras);
+  color: var(--w);
   font-weight: 500;
   font-size: 1.125rem;
   line-height: 32px;
@@ -58,7 +58,7 @@
 }
 
 .intro__h1 {
-  color: var(--cor_principal_letras);
+  color: var(--w);
   max-width: 15ch;
 }
 
@@ -85,29 +85,20 @@
   background-color: white;
   padding-top: 120px;
 }
-.produtos_conteiner {
-  display: grid;
-  max-width: 1600px;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 40px;
-  /* justify-items: center; */
+
+.produtos__tituloConteiner {
+  max-width: 1200px;
   margin: 0 auto;
+  text-align: left;
 }
 .produtos__titulo {
-  margin-left: 200px;
-  color: black;
-  grid-column: 1 / -1;
+  color: var(--c12);
+  margin-bottom: var(--spacing40);
 }
 
-.produtos__lista {
+.produtos__cards {
   display: flex;
-  /* flex-wrap: wrap; */
-  gap: 40px;
-  padding: 0px;
-}
-
-.teste {
-  object-fit: cover;
-  width: 100%;
-  height: 520px;
+  gap: var(--spacing40);
+  justify-content: center;
+  margin: var(--spacing72);
 }
