@@ -84,6 +84,7 @@
 .produtos {
   background-color: white;
   padding-top: 120px;
+  padding-bottom: var(--spacing200);
 }
 
 .produtos__tituloConteiner {
@@ -101,4 +102,71 @@
   gap: var(--spacing40);
   justify-content: center;
   margin: var(--spacing72);
+}
+.produtos__item {
+  position: relative;
+}
+.produtos_img {
+  border-radius: 5px;
+}
+
+.produtos__cardTitutlo {
+  margin: var(--spacing16) 0px var(--spacing08) 0px;
+  display: flex;
+  align-items: center;
+  margin-left: var(--spacing20);
+  color: var(--c11);
+}
+.produtos__preço {
+  margin-left: var(--spacing20);
+  color: var(--c8);
+}
+
+.produtos__cardTitutlo::before {
+  content: " ";
+  /* display: inline-block; */
+  width: 12px;
+  height: 8px;
+  background-color: var(--p1);
+  position: absolute;
+  left: 1px;
+}
+
+.vantagens {
+  color: var(--w);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: var(--spacing60);
+  position: relative;
+}
+.vantagens__subtitulo {
+  margin-top: var(--spacing80);
+  margin-bottom: var(--spacing20);
+}
+.vantagens__imagem {
+  position: absolute;
+  grid-column: 2;
+  top: -84px;
+}
+
+.vantagens__atributos {
+  display: flex;
+  gap: var(--spacing40);
+}
+
+.vantagens__link {
+  display: inline-block;
+  margin-top: var(--spacing20);
+  margin-bottom: var(--spacing100);
+  border-bottom: 3px solid var(--p1);
+}
+
+.vantagens__atributosMotor::after {
+  content: url("../img/fotos/");
+}
+.vantagens__atributos2Rastreador::before {
+  content: url("../img/icones/rastreador.svg");
+  display: block;
 }
