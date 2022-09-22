@@ -25,24 +25,6 @@
   text-decoration: underline var(--p1) 2px;
 }
 
-@media (max-width: 1250px) {
-  .menu {
-    margin: 32px 20px 0 20px;
-  }
-}
-@media (max-width: 500px) {
-  .menu {
-    justify-content: center;
-    gap: 30px;
-  }
-  .menu__link {
-    background-color: var(--p1);
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-weight: bold;
-  }
-}
-
 .intro {
   max-width: 1300px;
   display: grid;
@@ -81,6 +63,11 @@
   display: inline-block;
   text-transform: uppercase;
 }
+.intro__link:hover {
+  background: var(--p1);
+  transition: 1.5;
+}
+
 .produtos {
   background-color: white;
   padding-top: 120px;
@@ -154,19 +141,65 @@
 .vantagens__atributos {
   display: flex;
   gap: var(--spacing40);
+  padding-bottom: var(--spacing48);
 }
 
 .vantagens__link {
   display: inline-block;
   margin-top: var(--spacing20);
-  margin-bottom: var(--spacing100);
+  margin-bottom: var(--spacing48);
   border-bottom: 3px solid var(--p1);
 }
 
-.vantagens__atributosMotor::after {
-  content: url("../img/fotos/");
+.vantagens__atributosMotor::before {
+  content: url("../img/icones/eletrica.svg");
+  display: block;
 }
 .vantagens__atributos2Rastreador::before {
   content: url("../img/icones/rastreador.svg");
   display: block;
+}
+
+.parceiros {
+  padding: 100px;
+  background-color: var(--w);
+}
+
+.parceiros__titulo {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.parceiros__conteiner {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* background-color: var(--p1); */
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.child {
+  justify-self: center;
+  align-self: center;
+  width: 50%;
+  height: 50%;
+  /* background-color: #f2a50c; */
+}
+
+@media (max-width: 1250px) {
+  .menu {
+    margin: 32px 20px 0 20px;
+  }
+}
+@media (max-width: 500px) {
+  .menu {
+    justify-content: center;
+    gap: 30px;
+  }
+  .menu__link {
+    background-color: var(--p1);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
 }
