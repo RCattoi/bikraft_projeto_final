@@ -240,7 +240,32 @@
 
 .seguros {
   padding: 100px;
-  background-color: white;
+  background-color: var(--c11);
+  color: var(--w);
+}
+.seguros__titulo {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.seguros__conteiner {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: var(--spacing40);
+  margin-top: var(--spacing100);
+}
+
+.seguro__tipo {
+  background-color: var(--c12);
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.seguro__tipo h5 {
+  text-transform: uppercase;
+}
+.teste {
+  text-align: end;
 }
 
 @media (max-width: 1250px) {
