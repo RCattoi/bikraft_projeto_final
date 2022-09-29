@@ -171,11 +171,12 @@
   margin: 0 auto;
 }
 .parceiros__conteiner {
+  max-width: 1200px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2px;
   margin-top: var(--spacing60);
-  margin-bottom: var(--spacing160);
   background-color: rgba(128, 128, 128, 0.171);
 }
 .parceiros_img {
@@ -194,8 +195,8 @@
 .item {
   justify-self: center;
   align-self: center;
-  /* width: 150;
-  height: 75px; */
+  /* width: 0%;
+  height: 40px; */
   padding: 5px;
 
   background-color: white;
@@ -253,6 +254,7 @@
   margin: 0 auto;
   gap: var(--spacing40);
   margin-top: var(--spacing100);
+  align-items: center;
 }
 
 .seguro__tipo {
@@ -260,13 +262,98 @@
   border-radius: 5px;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  padding-left: var(--spacing60);
+  padding-top: var(--spacing32);
+  padding: var(--spacing32) var(--spacing32) 0 var(--spacing60);
+  width: 560px;
+}
+.seguro__tipo--size {
+  height: 396px;
 }
 .seguro__tipo h5 {
   text-transform: uppercase;
 }
-.teste {
+.seguro__plano {
+  margin-bottom: var(--spacing40);
+}
+.seguros__valor {
   text-align: end;
 }
+.seguros__preço {
+  position: relative;
+}
+.seguros__preço::after {
+  content: "mensal";
+  display: block;
+  color: var(--c6);
+  font-size: 0.75rem;
+  position: absolute;
+  right: 1px;
+  bottom: -17px;
+}
+ul {
+  position: relative;
+}
+.seguros__vantagem {
+  margin-bottom: var(--spacing20);
+  /* margin: 0px; */
+  display: block;
+}
+.seguros__vantagem::before {
+  content: url("../img/icones/lista.svg");
+  position: absolute;
+  left: -20px;
+}
+.seguros__link {
+  background-color: var(--c10);
+  padding: 16px 32px;
+  margin: var(--spacing32) 0;
+  display: inline-block;
+}
+.seguros__link:hover {
+  background-color: var(--c8);
+}
+
+.seguros__link--ouro {
+  background-color: var(--p1);
+  color: var(--p5);
+}
+
+.seguros__link--ouro:hover {
+  background-color: var(--p3);
+}
+.footer {
+  background-color: var(--c12);
+  color: var(--w);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 1200px;
+  gap: var(--spacing120);
+  margin: var(--spacing60) auto;
+}
+.footer_titulo {
+  margin: 0px;
+}
+
+.footer_endereço {
+  border-bottom: 1px solid var(--c6);
+  border-top: 1px solid var(--c6);
+}
+
+.footer_midias {
+  margin-top: var(--spacing20);
+  display: flex;
+  gap: var(--spacing32);
+}
+.footer_listaInformações {
+  margin-top: var(--spacing32);
+}
+.footer_list {
+  margin-bottom: 10px;
+}
+/* .footer_direitos {
+  margin: 10px auto;
+} */
 
 @media (max-width: 1250px) {
   .menu {
