@@ -384,10 +384,31 @@ ul {
   .produtos__titulo {
     margin-left: 20px;
   }
+  .vantagens {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .vantagens__titulo {
+    font-size: 3rem;
+  }
+  .vantagens__texto {
+    font-size: 1.25rem;
+  }
+  .vantagens__link,
+  .vantagens__subtitulo,
+  .vantagens__atributos {
+    font-size: 1rem;
+  }
+  .vantagens__atributos {
+    padding-bottom: 20px;
+  }
 }
 @media (max-width: 1100px) {
   .produtos__cardTitutlo {
     font-size: 1.5rem;
+  }
+  .vantagens {
+    gap: 20px;
   }
 }
 @media (max-width: 900px) {
@@ -406,6 +427,12 @@ ul {
   }
   .produtos__cards {
     flex-wrap: wrap;
+  }
+  .vantagens {
+    grid-template-columns: 1fr;
+  }
+  .vantagens__imagem {
+    display: none;
   }
 }
 @media (max-width: 700px) {
@@ -436,5 +463,9 @@ ul {
   }
   .produtos {
     padding-bottom: 70px;
+  }
+
+  .vantagens__atributos {
+    flex-direction: column;
   }
 }
