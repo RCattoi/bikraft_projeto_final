@@ -271,10 +271,11 @@
   padding-left: var(--spacing60);
   padding-top: var(--spacing32);
   padding: var(--spacing32) var(--spacing32) 0 var(--spacing60);
-  width: 560px;
+  max-width: 560px;
+  justify-items: start;
 }
 .seguro__tipo--size {
-  height: 396px;
+  max-height: 666px;
 }
 .seguro__tipo h5 {
   text-transform: uppercase;
@@ -284,6 +285,9 @@
 }
 .seguros__valor {
   text-align: end;
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: end;
 }
 .seguros__preço {
   position: relative;
@@ -315,6 +319,7 @@ ul {
   padding: 16px 32px;
   margin: var(--spacing32) 0;
   display: inline-block;
+  grid-column: 1/3;
 }
 .seguros__link:hover {
   background-color: var(--c8);
@@ -335,7 +340,9 @@ ul {
   grid-template-columns: 1fr 1fr 1fr;
   max-width: 1200px;
   gap: var(--spacing120);
-  margin: var(--spacing60) auto;
+  margin-top: var(--spacing60);
+  margin-left: auto;
+  margin-right: auto;
 }
 .footer_titulo {
   margin: 0px;
@@ -411,6 +418,9 @@ ul {
   .parceiros__tituloTexto {
     margin-left: 20px;
   }
+  .footer {
+    margin-left: 20px;
+  }
 }
 @media (max-width: 1100px) {
   .produtos__cardTitutlo {
@@ -421,6 +431,28 @@ ul {
   }
   .depoimento__texto {
     font-size: 1.25rem;
+  }
+  .seguros__conteiner {
+    margin: 0 auto;
+  }
+  .seguro__tipo {
+    grid-template-columns: 1fr;
+    width: 600px;
+    justify-items: center;
+  }
+
+  .seguro__tipo div,
+  .seguros__valor,
+  .seguro__tipo h5 {
+    grid-column: 1;
+  }
+  .seguro__tipo h5 {
+    margin-bottom: 20px;
+  }
+  .seguros__valor {
+    grid-row: 2;
+    justify-self: center;
+    margin-bottom: 20px;
   }
 }
 @media (max-width: 900px) {
@@ -439,9 +471,16 @@ ul {
   }
   .produtos__cards {
     flex-wrap: wrap;
+    max-width: 550px;
+  }
+  .produtos__cardTitutlo {
+    margin: 0 0 0 20px;
   }
   .vantagens {
     grid-template-columns: 1fr;
+  }
+  .vantagens__subtitulo {
+    margin-top: 30px;
   }
   .vantagens__imagem {
     display: none;
@@ -456,13 +495,33 @@ ul {
     display: none;
   }
 }
+@media (max-width: 850px) {
+  .seguros__conteiner {
+    flex-direction: column;
+  }
+  .seguro__tipo {
+    min-width: 200px;
+    width: 50%;
+  }
+  .seguros__titulo h4 {
+    padding-bottom: 20px;
+  }
+  .footer {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
 @media (max-width: 700px) {
   .menu {
     justify-content: center;
     gap: 30px;
+    max-width: max-content;
   }
   .menu__list {
     margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .menu__link {
     background-color: var(--p1);
@@ -496,5 +555,39 @@ ul {
   .parceiros__conteiner {
     grid-template-columns: 1fr;
     max-width: 300px;
+  }
+}
+
+@media (max-width: 500px) {
+  .produtos {
+    padding-top: 50px;
+  }
+  .produtos__titulo {
+    font-size: 2.5rem;
+  }
+  .produtos__cardTitutlo {
+    font-size: 1rem;
+  }
+  .vantagens__titulo {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  .vantagens__texto {
+    font-size: 1.25rem;
+    margin-top: 50px;
+  }
+  .seguros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footer_endereço {
+    width: 50%;
   }
 }
