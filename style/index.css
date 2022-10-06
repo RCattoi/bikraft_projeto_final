@@ -494,6 +494,12 @@ ul {
   .depoimento__img {
     display: none;
   }
+  .seguros {
+    padding: 50px 0;
+  }
+  .seguros__titulo {
+    margin-left: 20px;
+  }
 }
 @media (max-width: 850px) {
   .seguros__conteiner {
@@ -577,10 +583,10 @@ ul {
     margin-top: 50px;
   }
   .seguros {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding: 50px 0;
+  }
+  .seguros__titulo {
+    margin: 0px;
   }
   .footer {
     display: flex;
@@ -589,5 +595,49 @@ ul {
   }
   .footer_endereço {
     width: 50%;
+  }
+}
+
+@media (max-width: 400px) {
+  .depoimento__texto {
+    font-size: 1rem;
+  }
+  .depoimento__texto::after,
+  .depoimento__texto::before {
+    transform: scale(0.5);
+  }
+
+  .depoimento__texto::after {
+    content: url("../img/icones/quotationmarkdown.svg");
+    bottom: -30px;
+    right: 15px;
+  }
+  .depoimento__texto::before {
+    top: -30px;
+    left: -15px;
+  }
+  .seguros__titulo h4 {
+    font-size: 3rem;
+    /* -self: left; */
+    align-self: left;
+  }
+  .seguros__titulo {
+    margin: 20px;
+    justify-self: left;
+  }
+  .seguro__tipo {
+    min-width: 100px;
+    width: 50%;
+    padding: 10px 50px 0px 50px;
+  }
+  .seguros__preço {
+    font-size: 1.5rem;
+  }
+  .seguros__vantagem {
+    font-size: 1rem;
+  }
+  .seguros__link {
+    font-size: 1rem;
+    padding: 8px 16px;
   }
 }
