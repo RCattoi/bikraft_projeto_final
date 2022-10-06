@@ -456,6 +456,10 @@ ul {
   }
 }
 @media (max-width: 900px) {
+  .parceiros {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
   .parceiros__conteiner {
     grid-template-columns: 1fr 1fr;
     max-width: 600px;
@@ -471,7 +475,9 @@ ul {
   }
   .produtos__cards {
     flex-wrap: wrap;
-    max-width: 550px;
+    max-width: 50%;
+    min-width: 250px;
+    margin: 0 auto;
   }
   .produtos__cardTitutlo {
     margin: 0 0 0 20px;
@@ -599,6 +605,12 @@ ul {
 }
 
 @media (max-width: 400px) {
+  .produtos__titulo {
+    line-height: 32px;
+  }
+  .vantagens__titulo {
+    font-size: 1.75rem;
+  }
   .depoimento__texto {
     font-size: 1rem;
   }
