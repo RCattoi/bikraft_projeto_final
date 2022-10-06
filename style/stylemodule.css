@@ -38,7 +38,6 @@
   --spacing200: 200px;
 }
 html {
-  /* color: white; */
   background: var(--c12);
 }
 a {
