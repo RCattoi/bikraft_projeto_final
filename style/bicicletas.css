@@ -32,7 +32,7 @@
 }
 .bikeprodutos__img {
   max-width: 500px;
-  max-height: 340px;
+  max-height: 100%;
   object-fit: cover;
   border-radius: 5px;
 }
@@ -48,4 +48,39 @@
   text-align: center;
   left: 413px;
   top: 20px;
+}
+
+.bikeprodutos__titulo::before {
+  content: " ";
+  display: block;
+  width: 12px;
+  height: 8px;
+  background-color: var(--p1);
+}
+
+.bikeprodutos__paragrafo {
+  max-width: 45ch;
+}
+
+.bikeprodutos__item {
+  display: flex;
+  align-items: center;
+  /* margin-left: 10px; */
+}
+.bikeprodutos__item::before {
+  content: url("../img/icones/eletrica.svg");
+  margin-right: 5px;
+}
+.teste {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  position: relative;
+}
+.teste__link {
+  place-self: end;
+  position: absolute;
+  background: linear-gradient(180deg, #ffbf00 0%, #f2a50c 100%);
+  padding: 7px 32px;
+  right: -50px;
+  border-radius: 5px;
 }

@@ -159,6 +159,11 @@ h6 {
   font-weight: 600;
   line-height: 1.5rem;
 }
+.font-1-m {
+  font-family: "Poppins";
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+}
 .font-1-xs {
   font-family: "Poppins";
   font-size: 0.75rem;
