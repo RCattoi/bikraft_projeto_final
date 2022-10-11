@@ -1,5 +1,6 @@
 @import "./stylemodule.css";
-@import "./header_module.css";
+@import "./header.css";
+@import "./footer.css";
 
 .intro {
   max-width: 1300px;
@@ -297,37 +298,6 @@ ul {
 .seguros__link--ouro:hover {
   background-color: var(--p3);
 }
-.footer {
-  background-color: var(--c12);
-  color: var(--w);
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  max-width: 1200px;
-  gap: var(--spacing120);
-  margin-top: var(--spacing60);
-  margin-left: auto;
-  margin-right: auto;
-}
-.footer_titulo {
-  margin: 0px;
-}
-
-.footer_endereço {
-  border-bottom: 1px solid var(--c6);
-  border-top: 1px solid var(--c6);
-}
-
-.footer_midias {
-  margin-top: var(--spacing20);
-  display: flex;
-  gap: var(--spacing32);
-}
-.footer_listaInformações {
-  margin-top: var(--spacing32);
-}
-.footer_list {
-  margin-bottom: 10px;
-}
 
 @media (max-width: 1350px) {
   .intro__texto {
@@ -377,9 +347,6 @@ ul {
     padding-bottom: var(--spacing20);
   }
   .parceiros__tituloTexto {
-    margin-left: var(--spacing20);
-  }
-  .footer {
     margin-left: var(--spacing20);
   }
 }
@@ -479,10 +446,6 @@ ul {
   .seguros__titulo h4 {
     padding-bottom: 20px;
   }
-  .footer {
-    grid-template-columns: 1fr;
-    justify-items: center;
-  }
 }
 @media (max-width: 700px) {
   .intro {
@@ -506,7 +469,7 @@ ul {
   }
 
   .parceiros__tituloTexto {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   .parceiros__conteiner {
     grid-template-columns: 1fr;
@@ -537,14 +500,6 @@ ul {
   }
   .seguros__titulo {
     margin: 0px;
-  }
-  .footer {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  .footer_endereço {
-    width: 50%;
   }
 }
 

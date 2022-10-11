@@ -1,5 +1,6 @@
-@import "./header_module.css";
+@import "./header.css";
 @import "./stylemodule.css";
+@import "footer.css";
 
 .bicicletas_intro_conteiner {
   background-color: var(--c11);
@@ -21,22 +22,30 @@
 .bikeprodutos {
   padding-top: var(--spacing120);
   background-color: var(--w);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing120);
+  position: relative;
 }
 
 .bikeprodutos__card {
   display: flex;
   max-width: 1200px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   gap: var(--spacing40);
   position: relative;
 }
 .bikeprodutos__img {
-  max-width: 500px;
+  max-width: 560px;
   max-height: 100%;
   object-fit: cover;
   border-radius: 5px;
 }
-
+.bikeprodutos__img_conteiner {
+  z-index: 2;
+}
 .bikeprodutos__img_conteiner::after {
   content: "R$ 4999";
   font-size: 1rem;
@@ -46,8 +55,9 @@
   padding: 8px 16px;
   position: absolute;
   text-align: center;
-  left: 413px;
+  left: 472.5px;
   top: 20px;
+  z-index: 2;
 }
 
 .bikeprodutos__titulo::before {
@@ -61,26 +71,73 @@
 .bikeprodutos__paragrafo {
   max-width: 45ch;
 }
+.bikeprodutos__descricao {
+  z-index: 2;
+}
 
 .bikeprodutos__item {
   display: flex;
   align-items: center;
   /* margin-left: 10px; */
 }
-.bikeprodutos__item::before {
+.bikeprodutos__item--motor::before {
   content: url("../img/icones/eletrica.svg");
   margin-right: 5px;
 }
-.teste {
+.bikeprodutos__item--carbono::before {
+  content: url("../img/icones/carbono.svg");
+  margin-right: 5px;
+}
+.bikeprodutos__item--velocidade::before {
+  content: url("../img/icones/velocidade.svg");
+  margin-right: 5px;
+}
+
+.bikeprodutos__item--rastreador::before {
+  content: url("../img/icones/rastreador.svg");
+  margin-right: 5px;
+}
+
+.bikeprodutos__listContainer {
   display: grid;
   grid-template-columns: 4fr 1fr;
   position: relative;
 }
-.teste__link {
+.bikeprodutos__listContainer__link {
   place-self: end;
   position: absolute;
   background: linear-gradient(180deg, #ffbf00 0%, #f2a50c 100%);
-  padding: 7px 32px;
+  padding: 7px 54px 7px 32px;
   right: -50px;
   border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.bikeprodutos__listContainer__link::after {
+  content: url("../img/icones/seta.svg");
+  position: absolute;
+  right: 30px;
+  top: 4px;
+}
+
+.bikeprodutos__listContainer__link:hover {
+  background: var(--p1);
+  transition: 1.5;
+}
+.bikeprodutos__item:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.bikeprodutos__card--magic::before {
+  content: "";
+  height: 460px;
+  background-color: var(--c12);
+  z-index: 1;
+  display: inline;
+  position: absolute;
+  left: 200px;
+  bottom: -55px;
+  width: 69vw;
+  min-width: 69vmin;
 }
