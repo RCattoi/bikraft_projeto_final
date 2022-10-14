@@ -21,6 +21,7 @@
 }
 .bikeprodutos {
   padding-top: var(--spacing120);
+  padding-bottom: var(--spacing120);
   background-color: var(--w);
   display: flex;
   flex-direction: column;
@@ -128,7 +129,15 @@
 .bikeprodutos__item:not(:last-child) {
   margin-bottom: 5px;
 }
+/* .bikeprodutos__card--magic {
+  width: 75vw;
+} */
 
+/* .bikeprodutos__card--magic {
+  justify-self: center;
+  position: absolute;
+  left: 100px;
+} */
 .bikeprodutos__card--magic::before {
   content: "";
   height: 460px;
@@ -138,6 +147,5 @@
   position: absolute;
   left: 200px;
   bottom: -55px;
-  width: 69vw;
-  min-width: 69vmin;
+  width: 67vw;
 }
