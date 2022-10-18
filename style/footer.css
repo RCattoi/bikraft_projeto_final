@@ -16,6 +16,9 @@
   border-bottom: 1px solid var(--c6);
   border-top: 1px solid var(--c6);
 }
+.footer div p {
+  margin: 18.4px auto;
+}
 
 .footer_midias {
   margin-top: var(--spacing20);
