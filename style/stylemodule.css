@@ -178,11 +178,12 @@ h6 {
   letter-spacing: 1.5%;
   text-transform: uppercase;
 }
+
 .font-2-l {
   font-family: "Roboto";
+  font-size: 1.5rem;
   font-weight: 400;
   line-height: 2.25rem;
-  font-size: 1.5rem;
 }
 .font-2-m {
   font-family: "Roboto";

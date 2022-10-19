@@ -208,6 +208,38 @@ p {
   margin-left: 20px;
 }
 
+.seguros {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  /* padding: 0px; */
+  padding: var(--spacing60) 0;
+  gap: var(--spacing40);
+}
+
+.seguros__img {
+  object-fit: cover;
+  max-width: 580px;
+  max-height: 756px;
+  position: absolute;
+  bottom: -50px;
+  left: 50px;
+}
+.seguros__titulo {
+  max-width: 12.3ch;
+  margin: 0px;
+}
+.seguros__parafrafo {
+  max-width: 40ch;
+}
+.seguros__link {
+  background: linear-gradient(180deg, #ffbf00 0%, #f2a50c 100%);
+  border-radius: 5px;
+}
+footer {
+  margin-top: 120px;
+}
+
 @media (max-width: 1250px) {
   .page_bicicletas {
     padding-left: 10px;
@@ -217,6 +249,9 @@ p {
   }
   .outrosProdutos__img {
     max-width: 90%;
+  }
+  .seguros__img {
+    left: 20px;
   }
 }
 
@@ -266,6 +301,22 @@ p {
   .produto__fotosMini {
     max-width: 100%;
   }
+  .seguros {
+    gap: 60px;
+  }
+  .seguros__img {
+    max-width: 480px;
+    bottom: -30px;
+  }
+  .seguros__titulo {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  .seguros__parafrafo {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    margin-top: 20px;
+  }
 }
 @media (max-width: 800px) {
   .titulo {
@@ -288,6 +339,31 @@ p {
   .produto__conteudoContainerLink::before {
     bottom: -65px;
   }
+  h3 {
+    font-size: 4rem;
+  }
+  .outrosProdutos {
+    padding-bottom: var(--spacing100);
+  }
+  .seguros {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+  }
+  .seguros__titulo {
+    font-size: 4rem;
+    line-height: 50px;
+  }
+  .seguros__parafrafo {
+    font-size: 1.5rem;
+  }
+  .seguros__img {
+    display: none;
+  }
+  .seguros__link {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
 }
 
 @media (max-width: 550px) {
@@ -296,5 +372,42 @@ p {
   }
   .informacoes__paragrafo {
     max-width: 100ch;
+  }
+  .seguros {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: var(--spacing50);
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .seguros__titulo {
+    font-size: 2.5rem;
+    line-height: 50px;
+  }
+  .seguros__parafrafo {
+    font-size: 1.5rem;
+  }
+  .produto__conteudoContainerLink__link {
+    font-size: 0.75rem;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+  }
+  .produto__conteudoContainerLink__vantagem {
+    gap: 10px;
+  }
+  h3 {
+    font-size: 2.5rem;
+  }
+  .outrosProdutos {
+    padding-bottom: var(--spacing60);
+    padding-top: var(--spacing60);
+  }
+  footer {
+    margin-top: var(--spacing72);
+  }
+  .seguros__link {
+    font-size: 0.75rem;
+    padding: 10px 20px;
   }
 }
