@@ -1,0 +1,16 @@
+@import "../style/header.css";
+@import "../style/footer.css";
+@import "../style/seguro_componente.css";
+
+.seguros__vantagens {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.seguros__vantagensContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.seguos__vantagens::before {
+  content: url("../img/icones/eletrica.svg");
+}
